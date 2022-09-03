@@ -19,11 +19,11 @@ echo "Setup environment for user '${USERNAME}'"
 
 # Update Packages
 # =====================================================================
-apt update && apt upgrade
+apt update -y && apt upgrade -y
 
 # Install tmux
 # =====================================================================
-apt install tmux
+apt install -y tmux
 
 git clone https://github.com/gpakosz/.tmux.git "/home/${USERNAME}"
 # Setup configuration file
@@ -37,7 +37,7 @@ chown ${USERNAME}:${USERNAME} ${TMUX_CONF_FILE}
 
 # Install handy tools
 # =====================================================================
-apt install \
+apt install -y \
             vim \
             tmux \
             htop \
@@ -45,13 +45,13 @@ apt install \
             net-tools \
             python3 python3-pip python3-dev \
             tig \
-            zsh \
             curl \
-            ripgrep
+            ripgrep \
+            mycli
 
 # Install zsh shell
 # =====================================================================
-apt install zsh
+apt install -y zsh
 
 # Change user shell
 command -v zsh | tee -a /etc/shells
