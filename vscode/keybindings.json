@@ -1,0 +1,270 @@
+[
+  {
+    "key": "tab",
+    "when": "inSearchEditor || editorFocus && vim.mode == 'Normal' && !referenceSearchVisible &&!inReferenceSearchEditor",
+    "command": "extension.vim_ctrl+pagedown"
+  },
+  {
+    "key": "shift+tab",
+    "command": "extension.vim_ctrl+pageup",
+    "when": "inSearchEditor || editorFocus && vim.mode == 'Normal' && !referenceSearchVisible && !inReferenceSearchEditor"
+  },
+  {
+    "key": "tab",
+    "when": "referenceSearchVisible || inReferenceSearchEditor",
+    "command": "togglePeekWidgetFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "editorFocus || inSearchEditor"
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "editorFocus || inSearchEditor"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "search.action.focusQueryEditorWidget",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "search.focus.nextInputBox",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "home",
+    "command": "cursorTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "end",
+    "command": "cursorBottom",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "n",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorActive && textCompareEditorVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+n",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorActive && textCompareEditorVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+z",
+    "command": "editor.fold",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+u",
+    "command": "editor.unfold",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "e",
+    "command": "gitlens.openWorkingFile",
+    "when": "textCompareEditorActive && textCompareEditorVisible && editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+l",
+    "command": "gitlens.diffWithNext",
+    "when": "textCompareEditorActive && textCompareEditorVisible && editorTextFocus"
+  },
+  {
+    "key": "cmd+h",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "workbench.action.compareEditor.focusSecondarySide",
+        "gitlens.diffWithPrevious"
+      ]
+    },
+    "when": "textCompareEditorActive && textCompareEditorVisible && editorTextFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "when": "CodeActionMenuVisible",
+    "command": "focusPreviousCodeAction"
+  },
+  {
+    "key": "ctrl+n",
+    "when": "CodeActionMenuVisible",
+    "command": "focusNextCodeAction"
+  },
+  {
+    "key": "ctrl+p",
+    "when": "inQuickOpen",
+    "command": "workbench.action.quickOpenSelectPrevious"
+  },
+  {
+    "key": "ctrl+n",
+    "when": "inQuickOpen",
+    "command": "workbench.action.quickOpenSelectNext"
+  },
+  {
+    "key": "ctrl+p",
+    "when": "suggestWidgetHasFocusedSuggestion",
+    "command": "selectPrevSuggestion"
+  },
+  {
+    "key": "ctrl+n",
+    "when": "suggestWidgetHasFocusedSuggestion",
+    "command": "selectNextSuggestion"
+  },
+  {
+    "key": "alt+.",
+    "command": "editor.action.triggerSuggest"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.explorer.fileView.focus"
+  },
+  // file explorer related keybindings
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "v",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "explorer.openToSide"
+  },
+  {
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "renameFile"
+  },
+  {
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "deleteFile"
+  },
+  {
+    "key": "x",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "filesExplorer.cut"
+  },
+  {
+    "key": "y",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "filesExplorer.copy"
+  },
+  {
+    "key": "p",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "filesExplorer.paste"
+  },
+  {
+    "key": "ctrl+k",
+    "when": "searchViewletFocus && !inputFocus",
+    "command": "search.focus.previousInputBox"
+  },
+  // file explorer related keybindings end
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  // for search editor
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.search.toggleQueryDetails",
+    "when": "searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "when": "inputFocus  && !editorTextFocus",
+    "command": "search.focus.nextInputBox"
+  },
+  {
+    "key": "ctrl+k",
+    "when": "inputFocus && !editorTextFocus",
+    "command": "search.focus.previousInputBox"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.search.toggleQueryDetails",
+    "when": "searchInputBoxFocus && inSearchEditor"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "toggleSearchEditorRegex",
+    "when": "searchInputBoxFocus && inSearchEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "toggleSearchEditorWholeWord",
+    "when": "searchInputBoxFocus && inSearchEditor"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "toggleSearchEditorCaseSensitive",
+    "when": "searchInputBoxFocus && inSearchEditor"
+  },
+  {
+    "key": "tab",
+    "when": "inDiffEditor",
+    "command": "workbench.action.compareEditor.focusOtherSide"
+  },
+  // rebinidng key from f1 to f10
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "f3",
+    "command": "-list.find",
+    "when": "listFocus && listSupportsFind"
+  },
+  {
+    "key": "f3",
+    "command": "-workbench.action.terminal.findNext",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f6",
+    "command": "-workbench.action.focusNextPart"
+  }
+]

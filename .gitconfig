@@ -1,0 +1,14 @@
+[user]
+	email = timhost1233@gmail.com
+	name = timhsieh
+[core]
+    editor = vim
+[alias]
+	st = status -sb
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	rv = remote -v
+	gl = config --global -l
+	undo = reset HEAD~1 --mixed
+[help]
+	autocorrect = 20

@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "alefragnani.bookmarks",
+    "streetsidesoftware.code-spell-checker",
+    "be5invis.vscode-custom-css",
+    "hediet.vscode-drawio",
+    "dsznajder.es7-react-js-snippets",
+    "jacobdufault.fuzzy-search",
+    "eamodio.gitlens",
+    "bierner.markdown-preview-github-styles",
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "alefragnani.project-manager",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-wsl",
+    "vscodevim.vim",
+    "vspacecode.whichkey",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "ritwickdey.liveserver",
+    "esbenp.prettier-vscode",
+    "yatki.vscode-surround"
+  ]
+}

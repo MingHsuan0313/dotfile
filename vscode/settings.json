@@ -1,0 +1,406 @@
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": null // get rid of prettier formatter
+  },
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["-t", "py310"],
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "explorer.fileNesting.enabled": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.leader": ",",
+  "hediet.vscode-drawio.theme": "Kennedy",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "hediet.vscode-drawio.codeLinkActivated": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.experimental.useCustomCodeActionMenu": true,
+  "gitlens.views.commits.showBranchComparison": false,
+  "gitlens.views.commits.avatars": false,
+  "git.showCommitInput": false,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false
+  },
+  "cSpell.diagnosticLevel": "Hint",
+  "workbench.activityBar.visible": false,
+  "zenMode.hideStatusBar": false,
+  "breadcrumbs.enabled": false,
+  "zenMode.hideTabs": false,
+  "markdown-preview-github-styles.colorTheme": "light",
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vscode_custom_css.imports": ["file:///C:/Users/USER/Documents/custom.css"],
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-t>": false,
+    "<C-w>": false,
+    "<C-g>": true
+  },
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["search.action.openNewEditorToSide"]
+    },
+    {
+      "before": ["s"],
+      "commands": ["surround.with"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["<leader>", "<leader>", "b"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "after": ["<leader>", "<leader>", "w"]
+    },
+    {
+      "before": ["shift+c"],
+      "commands": ["editor.action.sourceAction"]
+    },
+    {
+      "before": ["shift+r"],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": ["shift+q"],
+      "commands": ["editor.action.quickFix"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["tab"],
+      "commands": ["tab"]
+    },
+    {
+      "before": ["shift+tab"],
+      "commands": ["outdent"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["f", "r"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["shift+m"],
+      "commands": ["workbench.action.maximizeEditor"]
+    },
+    {
+      "before": ["m", "m"],
+      "commands": ["workbench.action.evenEditorWidths"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["shift+t"],
+      "commands": ["editor.emmet.action.matchTag"]
+    },
+    {
+      "before": ["ctrl+g"],
+      "commands": [
+        "whichkey.show",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "g"
+        }
+      ]
+    },
+    {
+      "before": ["shift+b"],
+      "commands": [
+        "whichkey.show",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "b"
+        }
+      ]
+    },
+    {
+      "before": ["shift+z"],
+      "commands": [
+        "whichkey.show",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "z"
+        }
+      ]
+    },
+    {
+      "before": ["ctrl+q"],
+      "commands": ["notifications.clearAll"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["<leader>", "<leader>", "b"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "after": ["<leader>", "<leader>", "w"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["editor.action.revealDefinitionAside"]
+    },
+    {
+      "before": ["shift+q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["shift+c"],
+      "commands": ["editor.action.sourceAction"]
+    },
+    {
+      "before": ["ctrl+i"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["ctrl+o"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["space"],
+      "commands": ["whichkey.show"]
+    },
+    {
+      "before": ["shift+w"],
+      "after": ["v", "i", "w"]
+    },
+    {
+      "before": ["shift+h"],
+      "commands": ["editor.action.triggerSuggest"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["search.action.openNewEditorToSide"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "f"],
+      "after": ["v", "i", "w", "<leader>", "f"]
+    },
+    {
+      "before": ["?"],
+      "commands": ["fuzzySearch.activeTextEditor"]
+    },
+    {
+      "before": ["shift+k"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["leader", "v"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["shift+p"],
+      "commands": ["projectManager.listProjectsNewWindow"]
+    },
+    {
+      "before": ["shift+w"],
+      "commands": ["workbench.action.switchWindow"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["h"],
+      "after": ["^"]
+    },
+    {
+      "before": ["l"],
+      "after": ["$"]
+    }
+  ],
+  "whichkey.bindings": [
+    {
+      "key": "d",
+      "name": "Close editor group",
+      "type": "command",
+      "command": "workbench.action.closeEditorsInGroup"
+    },
+    {
+      "key": "x",
+      "name": "Close all editor groups",
+      "type": "command",
+      "command": "workbench.action.closeAllGroups"
+    },
+    {
+      "key": "v",
+      "name": "Split Vertical",
+      "type": "command",
+      "command": "workbench.action.splitEditorToRightGroup"
+    },
+    {
+      "key": "f",
+      "name": "Full Screen Toggle",
+      "type": "command",
+      "command": "workbench.action.toggleFullScreen"
+    },
+    {
+      "key": "g",
+      "name": "Git...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "b",
+          "name": "Show git blame",
+          "type": "command",
+          "command": "gitlens.toggleFileBlame"
+        },
+        {
+          "key": "c",
+          "name": "Compare with head",
+          "type": "command",
+          "command": "gitlens.compareHeadWith"
+        },
+        {
+          "key": "C",
+          "name": "Compare references",
+          "type": "command",
+          "command": "gitlens.compareWith"
+        },
+        {
+          "key": "h",
+          "name": "Show file history",
+          "type": "command",
+          "command": "gitlens.showQuickFileHistory"
+        },
+        {
+          "key": "s",
+          "name": "Show repo status",
+          "type": "command",
+          "command": "workbench.scm.focus"
+        },
+        {
+          "key": "S",
+          "name": "Show repo stash",
+          "type": "command",
+          "command": "gitlens.views.stashes.focus"
+        },
+        {
+          "key": "g",
+          "name": "Show git graph",
+          "type": "command",
+          "command": "git-graph.view"
+        },
+        {
+          "key": "r",
+          "name": "Reveal git commit",
+          "type": "command",
+          "command": "gitlens.revealCommitInView"
+        },
+        {
+          "key": "l",
+          "name": "Git diff line",
+          "type": "command",
+          "command": "gitlens.diffLineWithPrevious"
+        },
+        {
+          "key": "f",
+          "name": "Git diff file",
+          "type": "command",
+          "command": "gitlens.diffWithPrevious"
+        }
+      ]
+    },
+    {
+      "key": "b",
+      "name": "Bookmarks",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "e",
+          "name": "Bookmark Explorer",
+          "type": "command",
+          "command": "bookmarksExplorer.focus"
+        },
+        {
+          "key": "t",
+          "name": "Bookmark Toggle",
+          "type": "command",
+          "command": "bookmarks.toggle"
+        },
+        {
+          "key": "T",
+          "name": "Bookmark Toggle",
+          "type": "command",
+          "command": "bookmarks.toggleLabeled"
+        },
+        {
+          "key": "f",
+          "name": "List bookmarks in file",
+          "type": "command",
+          "command": "bookmarks.list"
+        },
+        {
+          "key": "l",
+          "name": "List all bookmarks",
+          "type": "command",
+          "command": "bookmarks.listFromAllFiles"
+        },
+        {
+          "key": "c",
+          "name": "Clear bookmarks in file",
+          "type": "command",
+          "command": "bookmarks.clear"
+        },
+        {
+          "key": "C",
+          "name": "Clear all bookmarks",
+          "type": "command",
+          "command": "bookmarks.clearFromAllFiles"
+        }
+      ]
+    }
+  ],
+  "gitlens.blame.format": "${message|15?} ${agoOrDate|10-}"
+}
