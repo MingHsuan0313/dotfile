@@ -11,17 +11,10 @@ function virtualenv_info() {
     fi
 }
 
-function hostname_info() {
-    string=$(hostname -i)
-    host=(`echo $string | sed 's/\ /\n/g'`)
-    host=${host[1]}
-}
-
 autoload -U add-zsh-hook
 add-zsh-hook precmd virtualenv_info
-add-zsh-hook precmd hostname_info
 
-PROMPT=$'%{$fg_bold[red]%}[${host}] %{$fg_bold[cyan]%}(${venv})'
+PROMPT=$'%{$fg_bold[cyan]%}(${venv})'
 PROMPT+=' %{$fg[green]%}%c%{$reset_color%} $(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
